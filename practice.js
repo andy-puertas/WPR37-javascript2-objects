@@ -2,7 +2,6 @@
   Once you complete a problem, refresh ./SpecRunner.html in your browser and check to see if the problem's test(s) are passing.
   Passed tests will be indicated by a green circle.
   Failed tests will be indicated by a red X.
-
   You can refresh the page at any time to re-run all the tests.
 */
 
@@ -14,7 +13,9 @@
   Then alert your name using dot notation.
 */
 
-//Code here
+let me = {name: 'Andy', age: 24};
+
+//alert(me.name);
 
 
 
@@ -25,15 +26,22 @@
   Have the values to those keys be your favorite thing in that category.
 */
 
-//Code here
 
+let favoriteThings = {
+  band: 'Green Day', 
+  food: 'Flan', 
+  person: 'Anna', 
+  book: 'Red Fern', 
+  movie: 'Toy Story', 
+  holiday: 'Halloween'};
 
 
 /*
   After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 */
 
-//Code here
+favoriteThings['car'] = 'swifty';
+favoriteThings['brand'] = 'sony';
 
 
 
@@ -41,8 +49,9 @@
   Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
-//Code here
 
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 ////////// PROBLEM 3 //////////
@@ -55,16 +64,22 @@
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack. 
 */
 
-//Code here
+let backPack = {};
 
+let item = 'firstPocket';
+
+backPack['firstPocket'] = item;
+
+backPack.firstPocket = 'chapstick';
+
+backPack.color = 'Black';
 
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
-//Code here
-
+//alert(backPack);
 
 
 /*
@@ -73,8 +88,7 @@ Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. 
 */
 
-//Code here
-
+//console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -96,11 +110,24 @@ var user2 = {
   Make that change without modifying the original object code above.
 */
 
-//Code Here
+
+user2.name = 'Tyler S. McGinnis';
+
+user2['email'] = 'tyler.mcginnis@devmounta.in';
 
 
 
-////////// EXTRA PRACTICE PROBLEMS BELOW //////////
+
+
+
+/////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
+////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
+
+
+
+
+
+
 
 ////////// PROBLEM 5 //////////
 
@@ -148,5 +175,4 @@ var user2 = {
 */
 
 //Code Here
-
 
